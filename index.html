@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+	<meta name="generator" content="Hugo 0.93.0" />
+    <title>TVExtBot</title>
+    
+    
+      
+      
+        
+      
+    
+    <meta name="description" content="TVExtBot는 트레이딩뷰 사이트(tradingview.com)의 얼러트와 연동하여 암호화폐 자동매매가 가능한 시스템입니다." />
+    
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta http-equiv="Cache-Control" content="no-cache">
+
+
+<link rel="stylesheet" href="/docs/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/docs/css/layouts/main.css"/>
+<link rel="stylesheet" href="/docs/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/docs/css/plyr.css"/>
+<link rel="stylesheet" href="/docs/css/flag-icon.min.css"/>
+<link rel="stylesheet" href="/docs/css/katex.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/docs/images/favicon_hu570fab3683a7dba6a5302da9752d87d9_24921_42x0_resize_box_3.png" />
+
+
+
+
+
+
+
+
+<meta property="og:title" content="TVExtBot"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content="TVExtBot는 트레이딩뷰 사이트(tradingview.com)의 얼러트와 연동하여 암호화폐 자동매매가 가능한 시스템입니다."/>
+<meta property="og:image" content="https://jp-tvextbot.github.io/docs/images/main-logo.png">
+<meta property="og:url" content="https://jp-tvextbot.github.io/docs">
+
+    <link rel="stylesheet" href="/docs/css/sections/home.css"/>
+    <link rel="stylesheet" href="/docs/css/sections/about.css"/>
+    <link rel="stylesheet" href="/docs/css/sections/skills.css"/>
+    <link rel="stylesheet" href="/docs/css/sections/experiences.css"/>
+    <link rel="stylesheet" href="/docs/css/sections/education.css"/>
+    <link rel="stylesheet" href="/docs/css/sections/projects.css"/>
+    <link rel="stylesheet" href="/docs/css/sections/recent-posts.css"/>
+    <link rel="stylesheet" href="/docs/css/sections/achievements.css"/>
+    <link rel="stylesheet" href="/docs/css/sections/accomplishments.css"/>
+
+    
+    <link rel="stylesheet" href="/docs/css/style.css"/>
+    
+    
+    
+        
+        
+          
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-136222945-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+        
+    
+  </head>
+  <body data-spy="scroll" data-target="#top-navbar" data-offset="100">
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar initial-navbar" id="top-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/docs">
+      
+        <img src="/docs/images/inverted-logo_hu95eb2d64a4ea5f832fb8ffe15d66f1ae_20428_42x0_resize_box_3.png" id="logo" alt="Logo">
+      TVExtBot</a>
+    <button
+      class="navbar-toggler navbar-dark"
+      id="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">홈</a>
+        </li>
+        
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">소개</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="#features">특징</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="#price">가격</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="#video">동영상</a>
+                </li>
+              
+            
+          
+        
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/docs/posts">매뉴얼</a>
+          </li>
+        
+        
+        
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/docs/images/main-logo_hu7962c8f4117a70956be5db6c3f05e9b5_22536_42x0_resize_box_3.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/docs/images/inverted-logo_hu95eb2d64a4ea5f832fb8ffe15d66f1ae_20428_42x0_resize_box_3.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+</nav>
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid home" id="home">
+  <style>
+     
+    #homePageBackgroundImageDivStyled {
+        
+      background-image: url('https://jp-tvextbot.github.io/docs/docs/images/background_hu6bb331e4d28fcf0cf0685793681d7c30_54314_500x0_resize_q75_box.jpg');
+    }
+     
+    @media (min-width: 500px) and (max-width: 800px) {  
+      #homePageBackgroundImageDivStyled {   
+          background-image: url('https://jp-tvextbot.github.io/docs/docs/images/background_hu6bb331e4d28fcf0cf0685793681d7c30_54314_800x0_resize_q75_box.jpg');
+        }
+    }
+    @media (min-width: 801px) and (max-width: 1200px) {  
+      #homePageBackgroundImageDivStyled {   
+          background-image: url('https://jp-tvextbot.github.io/docs/docs/images/background_hu6bb331e4d28fcf0cf0685793681d7c30_54314_1200x0_resize_q75_box.jpg');
+        }
+    }
+    @media (min-width: 1201px) and (max-width: 1500px) {  
+      #homePageBackgroundImageDivStyled {   
+          background-image: url('https://jp-tvextbot.github.io/docs/docs/images/background_hu6bb331e4d28fcf0cf0685793681d7c30_54314_1500x0_resize_q75_box.jpg');
+        }
+    }
+    @media (min-width: 1501px) {  
+      #homePageBackgroundImageDivStyled {   
+          background-image: url('https://jp-tvextbot.github.io/docs/docs/images/background.jpg');
+        }
+    }
+    </style>
+    <span class="on-the-fly-behavior"></span>
+  <div
+    id="homePageBackgroundImageDivStyled"
+    class="background container-fluid"
+  ></div>
+  <div class="container content text-center">
+    <img src="/docs/images/main-logo_hu7962c8f4117a70956be5db6c3f05e9b5_22536_148x148_fit_box_3.png"
+      class="rounded-circle mx-auto d-block img-fluid"
+      alt="Author Image"
+    />
+    <h1 class="greeting">  TVExtBot</h1>
+    
+    <div class="typing-carousel">
+      <span id="ityped" class="ityped"></span>
+      <span class="ityped-cursor"></span>
+    </div>
+    <ul id="typing-carousel-data">
+      
+        
+          <li>트레이딩뷰 전략 자동화</li>
+        
+          <li>암호화폐 자동매매 서비스</li>
+        
+          <li>편리한 유저인터페이스 제공</li>
+        
+          <li>다양한 국내외 거래소 지원</li>
+        
+          <li>자체 개발 전략제공</li>
+        
+      
+    </ul>
+    
+      
+        
+        
+          
+        
+        <a href="#about" aria-label="Read 더 - TVExtBot"><i class="arrow bounce fa fa-chevron-down"></i></a>
+      
+    
+  </div>
+</div>
+
+    
+    
+      
+    
+
+    
+      
+      
+        
+          <div class="container-fluid section-holder d-flex bg-white">
+            
+
+  
+
+
+
+
+  
+
+
+<div class="container anchor p-lg-5 about-section" id="about">
+  <div class="card bg-light mb-3 border-0">
+    <div class="row no-gutters">
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="card-title h3">TVExtBot에 대해서</h5>
+          <p class="card-text">
+            <a href="https://kr.tradingview.com/" target="_blank">트레이딩뷰</a>는 전세계에서 암호화폐 트레이더들이 가장 많이 사용하는 트레이딩 플랫폼입니다.
+            <b>TVExtBot</b>는 전세계의 많은 트레이더들이 <a href="https://kr.tradingview.com/" target="_blank">트레이딩뷰</a>를 통해 무료로 공개한 지표나 전략을 활용하거나 자신이 직접 개발한 전략을 통해 자동매매를 할 수 있는 웹서비스<span class="text-primary small">※</span> 입니다.
+          </p>
+          
+          <p class="card-text">
+            
+            <a class="btn btn-info" role="button" aria-pressed="true" href="/posts" target="_self"><i class="fas fa-question-circle"></i> 사용자 매뉴얼 보기</a>
+          </p>
+          <br><br>
+          <p class="card-text">
+            <span class="text-primary small">※ 클라우드 서버에서 웹서비스로 운영하고 있기 때문에 컴퓨터를 켜두실 필요가 없습니다.</span>
+          </p>
+          
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="slider">
+          <img src="/images/tradingview.png" alt="트레이딩뷰차트">
+          <img src="/images/ordermsg.png" alt="주문메시지작성">
+          <img src="/images/apikeys.png" alt="API키등록">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container ml-auto text-center usage-flow-header">
+    TVExtBot는 누구나 쉽게 사용할 수 있습니다. <a class="text-muted small" href="/posts/first" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+  </div>
+  <div class="usage-flow">
+    <div class="usage-flow-box" style="flex-direction:column;align-items:center;padding:0">
+      <img src="/images/usage-1.svg" alt="index_img" class="usage-flow-image">
+      <div class="usage-flow-title" style="margin-top:-15px;margin-bottom:8px;text-align:center;font-family:IBM Plex Sans;font-style:normal;font-weight:600;line-height:34px;color:#000000">확장프로그램 설치</div>
+      <div class="usage-flow-desc" style="text-align:center;font-family:IBM Plex Sans;font-style:normal;font-weight:normal;line-height:24px;color:#6E747B">크롬 웹스토어에서 구글크롬 확장프로그램을 설치하세요.</div>
+    </div>
+    <img src="/images/arrow.svg" alt="다음" class="usage-flow-next">
+    <div class="usage-flow-box" style="flex-direction:column;align-items:center;padding:0">
+      <img src="/images/usage-2.svg" alt="index_img" class="usage-flow-image">
+      <div class="usage-flow-title" style="margin-top:-15px;margin-bottom:8px;text-align:center;font-family:IBM Plex Sans;font-style:normal;font-weight:600;line-height:34px;color:#000000">거래소 API키 등록</div>
+      <div class="usage-flow-desc" style="text-align:center;font-family:IBM Plex Sans;font-style:normal;font-weight:normal;line-height:24px;color:#6E747B">거래소에서 API키를 발급후 확장프로그램의 API키 등록화면에서 API키를 등록하세요.</div>
+    </div>
+    <img src="/images/arrow.svg" alt="다음" class="usage-flow-next">
+    <div class="usage-flow-box" style="flex-direction:column;align-items:center;padding:0">
+      <img src="/images/usage-3.svg" alt="index_img" class="usage-flow-image">
+      <div class="usage-flow-title" style="margin-top:-15px;margin-bottom:8px;text-align:center;font-family:IBM Plex Sans;font-style:normal;font-weight:600;line-height:34px;color:#000000">주문메시지 작성</div>
+      <div class="usage-flow-desc" style="text-align:center;font-family:IBM Plex Sans;font-style:normal;font-weight:normal;line-height:24px;color:#6E747B">자동매매에 사용하는 전략(지표)의 진입조건에 맞는 주문메시지를 작성하세요.</div>
+    </div>
+    <img src="/images/arrow.svg" alt="다음" class="usage-flow-next">
+    <div class="usage-flow-box" style="flex-direction:column;align-items:center;padding:0">
+      <img src="/images/usage-4.svg" alt="index_img" class="usage-flow-image">
+      <div class="usage-flow-title" style="margin-top:-15px;margin-bottom:8px;text-align:center;font-family:IBM Plex Sans;font-style:normal;font-weight:600;line-height:34px;color:#000000">트레이딩뷰 얼러트설정</div>
+      <div class="usage-flow-desc" style="text-align:center;font-family:IBM Plex Sans;font-style:normal;font-weight:normal;line-height:24px;color:#6E747B">작성한 주문메시지를 트레이딩뷰 얼러트 또는 파인스크립트내에 설정하세요.</div>
+    </div>
+  </div>
+</div>
+
+          </div>
+          
+          
+            
+          
+        
+      
+        
+          <div class="container-fluid section-holder d-flex bg-dimmed">
+            
+
+  
+
+
+<div class="container-fluid anchor pb-5 projects-section" id="features">
+  
+    <h1 class="text-center">
+        <span id="features"></span>특징</h1>
+  
+  <div class="container ml-auto text-center">
+    TVExtBot 기능에 대한 더 자세한 내용은 <a href="/posts" target="_self">사용자 매뉴얼</a>을 확인해 주세요.
+  </div>
+  <div class="container ml-auto text-center">
+    <div class="btn-group flex-wrap" role="group" id="project-filter-buttons">
+      
+    </div>
+  </div>
+  <div class="container filtr-projects">
+    
+    <div class="row">
+      <div class="col-md-3">
+        <div style="text-align: center;">
+          <i class="fas fa-cogs fa-5x"></i>
+          <h4 style="margin-top: 0.25em;">트레이딩뷰 전략 자동화</h4>
+          <p>트레이딩뷰를 통해 공개된 지표나 전략을 TVExtBot과 연동하여 자신만의 자동매매 시스템을 구축할수 있습니다.</p>  
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div style="text-align: center;">
+          <i class="fas fa-laptop fa-5x"></i>
+          <h4 style="margin-top: 0.25em;">다양한 거래소 지원</h4>
+          <p>Binance,Bybit,Bitget,FTX,Bithumb 등 다양한 거래소를 지원하고 앞으로도 거래소를 계속 추가할 예정입니다.</p>  
+        </div>    
+      </div>
+      <div class="col-md-3">
+        <div style="text-align: center;">
+          <i class="fas fa-user-cog fa-5x"></i>
+          <h4 style="margin-top: 0.25em;">편리한 유저인터페이스</h4>
+          <p>주문메시지 작성,거래소 API키 관리,주문내역,퀵주문등 누구나 쉽게 사용할수 있는 크롬확장 프로그램을 제공합니다.</p>  
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div style="text-align: center;">
+          <i class="fab fa-telegram-plane fa-5x"></i>
+          <h4 style="margin-top: 0.25em;">텔레그램 서비스</h4>
+          <p>매매와 에러정보를 실시간으로 받아 볼수 있는 알림봇 서비스와 전체 계정자산을 확인할수 있는 정보채널를 제공합니다.</p>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+          
+          
+            
+          
+        
+      
+        
+          <div class="container-fluid section-holder d-flex bg-white">
+            
+
+  
+
+
+<div class="container-fluid anchor pb-5 skills-section">
+  
+    <h1 class="text-center">
+        <span id="price"></span>가격</h1>
+  
+  <p class="text-center">유료버전은 1년 또는 6개월의 사용기간을 선택해서 구매하실 수 있습니다.</p>
+  <section class="pricing py-5">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-sm-4 mb-2">
+          <div class="card">
+            <div class="card-body">
+              
+              <h5 class="card-title text-uppercase text-center" style="color: lime;">TRIAL</h5>
+              <div class="row d-flex align-items-end">
+                <div class="col-md-12 text-center">
+                  <span id="trialPrice" class="text-center" style="font-size: 2rem;margin: 0;">무료</span>/1개월
+                </div>
+              </div>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>거래소당 1계정 사용가능(분당 주문횟수1회)</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>주문메시지 저장기능</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>텔레그램 알림봇 서비스</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>웹훅URL에 의한 자동매매</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>변동성 돌파 기본 전략 제공</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>변동성 돌파 플러스 전략 제공</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>변동성 돌파 트렌드 전략 제공</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>하이킨아시 업스윙 전략</li>
+              </ul>
+              <span><small style="color: chocolate;"><i class="fas fa-info-circle"></i> 해당버전은 바이낸스현물,테스트넷만 사용가능합니다.</small></span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-4 mb-2">
+          <div class="card">
+            <div class="card-body">
+              
+              <h5 class="card-title text-primary text-uppercase text-center">STANDARD</h5>
+              <div class="row d-flex align-items-end">
+                <div class="col-md-12 text-center">
+                  <span id="standardPrice" class="text-center" style="font-size: 2rem;margin: 0;">20만원</span>/
+                  <select name="selStandardPeriod" class="border-default text-default">
+                    <option value="1year">1년</option>
+                    <option value="6month">6개월</option>
+                  </select>
+                </div>
+              </div>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>거래소당 5계정 추가가능(분당 주문횟수10회)</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>주문메시지 저장기능</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>텔레그램 알림봇 서비스</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>웹훅URL에 의한 자동매매</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>변동성 돌파 기본 전략 제공</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>변동성 돌파 플러스 전략 제공</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>변동성 돌파 트렌드 전략 제공</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><a class="text-default" style="text-decoration:none;" href="https://tvextbot.github.io/posts/strategies/indicator_haus/" target="_blank">하이킨아시 업스윙 전략 제공 <i class="fas fa-external-link-alt"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              
+              <h5 class="card-title text-info text-uppercase text-center">EXPERT</h5>
+              <div class="row d-flex align-items-end">
+                <div class="col-md-12 text-center">
+                  
+                  <span id="expertPrice" class="text-center" style="font-size: 2rem;margin: 0;">40만원</span>/
+                  <select name="selExpertPeriod" class="border-default text-default">
+                    <option value="1year">1년</option>
+                    <option value="6month">6개월</option>
+                  </select>
+                </div>
+              </div>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>거래소당 5계정 추가가능(분당 주문횟수10회)</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>주문메시지 저장기능</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>텔레그램 알림봇 서비스</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>웹훅URL에 의한 자동매매</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><a class="text-default" style="text-decoration:none;" href="https://tvextbot.github.io/posts/strategies/indicator_vbi/" target="_blank">변동성 돌파 기본 전략 제공 <i class="fas fa-external-link-alt"></i></a></li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><a class="text-default" style="text-decoration:none;" href="https://tvextbot.github.io/posts/strategies/indicator_vbi_plus/" target="_blank">변동성 돌파 플러스 전략 제공 <i class="fas fa-external-link-alt"></i></a></li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><a class="text-default" style="text-decoration:none;" href="https://tvextbot.github.io/posts/strategies/indicator_vbt/" target="_blank">변동성 돌파 트렌드 전략 제공 <i class="fas fa-external-link-alt"></i></a></li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><a class="text-default" style="text-decoration:none;" href="https://tvextbot.github.io/posts/strategies/indicator_haus/" target="_blank">하이킨아시 업스윙 전략 제공 <i class="fas fa-external-link-alt"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <small style="color: dimgray;">
+    <ul class="fa-ul">
+      <li><i class="fas fa-comment"></i> 인증키 구매는 크롬확장프로그램을 설치하신 후 설정화면의 인증키등록 페이지에서 구매 가능합니다.</li>
+      <li><i class="fas fa-comment"></i> 송금 가능한 코인은 <span class="text-danger">비트코인, 비트코인 캐쉬, 이더리움, 라이트코인, 도지코인, 테더(USDT), DAI</span> 입니다.(<span class="text-primary">결제하실 코인수량은 현재 시세를 기준으로 자동으로 변환됩니다</span>)</span></li>
+      <li><i class="fas fa-comment"></i> 위의 송금 가능한 코인 이외에 다른 코인이나 은행계좌이체로 송금을 원하실 경우에는 사이트 아래에 있는 메일이나 텔레그램으로 문의해 주세요.</li>
+    </ul>
+  </small>
+</div>
+
+          </div>
+          
+          
+            
+          
+        
+      
+        
+          <div class="container-fluid section-holder d-flex bg-dimmed">
+            
+
+  
+
+
+<div class="container-fluid anchor pb-5 achievements-section">
+  
+    <h1 class="text-center">
+        <span id="video"></span>동영상</h1>
+  
+  <div class="container">
+    <div class="row" id="gallery">
+    </div>
+  </div>
+  
+  <div class="d-none" id="achievements-holder">
+    
+  </div>
+  <p class="text-center">처음 사용하시는 분들 위한 동영상 가이드입니다.</p>
+  <div class="slide-wrapper">
+    <div class="slide">
+      <div class="slide-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/cOGd50Ut-l0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="slide-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/zC8YX8pYbhc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="slide-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/755Jbtt-pGs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="slide-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/TSJjkIXiPpA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="slide-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/z7wWU2M4x7I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+  </div>  
+</div>
+
+          </div>
+          
+          
+            
+          
+        
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+      
+  
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>바로가기</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io/docs#about">소개</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io/docs#features">특징</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io/docs#price">가격</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io/docs#video">동영상</a>
+                </li>
+              
+            
+              
+            
+            <li class="nav-item">
+              <a class="smooth-scroll" href="/posts">매뉴얼</a>
+            </li>
+            <li class="nav-item">
+              <a class="smooth-scroll" href="/posts/referral">거래소 수수료 할인</a>
+            </li>
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>문의</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:tvextbot@gmail.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>tvextbot@gmail.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://t.me/bkson55 target="_blank" rel="noopener">
+                  <span><i class="fab fa-telegram"></i></span> <span>bkson55</span>
+                </a></li>
+              
+            
+          </ul>
+          <h5>공지채널</h5>
+          <ul>
+            <li>
+              <a href="https://t.me/tvextbot" target="_blank" rel="noopener">
+                <span><i class="fab fa-telegram"></i>　tvextbot</span>
+              </a>
+            </li>
+          </ul>          
+        </div>
+        
+        
+        
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>구글크롬 확장프로그램 다운로드</p>
+            <a class="btn btn-info" role="button" aria-pressed="true" href="https://chrome.google.com/webstore/detail/tvextbot/ocbdbfgioaohinjejhibklaoikhlodne" target="_blank"><i class="fab fa-chrome"></i> 크롬 웹스토어로 바로가기</a>
+            <p class="card-text mt-2"><small class="text-muted"><i class="fas fa-info-circle"></i> 크롬확장프로그램은 크롬브라우저에서만 사용가능합니다.</small></p>
+          </div>
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          
+        </div>
+        <div class="col-md-4 text-center">© 2019 Copyright.</div>
+        <div class="col-md-4 text-right small">
+          <a href="https://sites.google.com/view/terms-and-conditions-tvextbot" target="_blank" rel="noopener">Terms and Conditions</a>&nbsp;|&nbsp;
+          <a href="https://sites.google.com/view/privacy-policy-tvextbot" target="_blank" rel="noopener">Privacy Policy</a>
+        </div>
+        
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script type="text/javascript" src="/docs/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/docs/js/popper.min.js"></script>
+<script type="text/javascript" src="/docs/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/docs/js/navbar.js"></script>
+<script type="text/javascript" src="/docs/js/plyr.js"></script>
+<script type="text/javascript" src="/docs/js/main.js"></script>
+
+<script type="text/javascript" defer src="/docs/js/katex.min.js"></script>
+<script type="text/javascript" defer src="/docs/js/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider').bxSlider({
+            auto: true,
+            pause: 5000
+        });
+    });
+    $(document).on("change", "select[name=selStandardPeriod]",function(e) {
+        var period = $(this).val();
+        if (period === '1year') {
+            $('#standardPrice').text('20만원');
+        } else if (period === '6month') {
+            $('#standardPrice').text('14만원');
+        }    
+    });  
+    $(document).on("change", "select[name=selExpertPeriod]",function(e) {
+        var period = $(this).val();
+        if (period === '1year') {
+            $('#expertPrice').text('40만원');
+        } else if (period === '6month') {
+            $('#expertPrice').text('28만원');
+        }    
+    });  
+
+    $('.slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        dots: true,
+        accessibility: true,
+        arrows: true,
+        swipe: true,
+        swipeToSlide: true
+    });
+
+    $('.slide').bind('touchstart', function() {
+        return true;
+    });
+</script>
+
+    
+    <script src="/docs/js/itype.min.js"></script>
+    <script src="/docs/js/github-button.js"></script>
+    <script src="/docs/js/home.js"></script>
+    <script src="/docs/js/jquery.filterizr.min.js"></script>
+  </body>
+</html>
