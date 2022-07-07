@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on TVExtBot</title>
-    <link>https://jp-tvextbot.github.io/docs/categories/</link>
+    <link>https://jp-tvextbot.github.io/categories/</link>
     <description>Recent content in Categories on TVExtBot</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 27 May 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://jp-tvextbot.github.io/docs/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 May 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://jp-tvextbot.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
