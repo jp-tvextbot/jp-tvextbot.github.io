@@ -1,40 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>전략 on TVExtBot</title>
+    <title>インジケーター(戦略) on TVExtBot</title>
     <link>https://jp-tvextbot.github.io/posts/strategies/</link>
-    <description>Recent content in 전략 on TVExtBot</description>
+    <description>Recent content in インジケーター(戦略) on TVExtBot</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 07 Mar 2022 17:06:25 +0600</lastBuildDate><atom:link href="https://jp-tvextbot.github.io/posts/strategies/index.xml" rel="self" type="application/rss+xml" /><item>
-      <title>하이킨아시 업스윙 전략</title>
+      <title>平均足アップスイング戦略</title>
       <link>https://jp-tvextbot.github.io/posts/strategies/indicator_haus/</link>
       <pubDate>Mon, 07 Mar 2022 17:06:25 +0600</pubDate>
       
       <guid>https://jp-tvextbot.github.io/posts/strategies/indicator_haus/</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;text-primary&#34;&gt;&lt;strong&gt;하이킨아시 업스윙 전략&lt;/strong&gt;&lt;/span&gt;은 하이킨아시를 활용하여 상승하는 추세를 따라가며 상승장에서만 수익을 실현하는 단기매매에 적합한 추세추종 전략입니다.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;span class=&#34;text-primary&#34;&gt;&lt;strong&gt;平均足アップスイング戦略&lt;/strong&gt;&lt;/span&gt;は、平均足を活用して上昇する傾向に追従し、上昇場でのみ収益を実現する短期売買に適した戦略です。&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>파인스크립트 전략을 사용하여 자동매매하는 방법</title>
+      <title>PineスクリプトのStrategyを使用する方法</title>
       <link>https://jp-tvextbot.github.io/posts/strategies/strategy_alert/</link>
       <pubDate>Sun, 06 Mar 2022 12:06:25 +0600</pubDate>
       
       <guid>https://jp-tvextbot.github.io/posts/strategies/strategy_alert/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;파인스크립트의 전략(strategy)를 사용해서 자동매매하는 방법에 대한 내용입니다.&lt;br&gt;
-어느정도 파인스크립트에 대한 기본지식이 필요하니 &lt;a href=&#34;https://jp-tvextbot.github.io/posts/strategies/pinescript&#34;&gt;파인스크립트 기초&lt;/a&gt; &lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; 를 참고해 주세요.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>파인스크립트 기초(v5지원)</title>
-      <link>https://jp-tvextbot.github.io/posts/strategies/pinescript/</link>
-      <pubDate>Sun, 06 Mar 2022 08:06:25 +0600</pubDate>
-      
-      <guid>https://jp-tvextbot.github.io/posts/strategies/pinescript/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;파인(Pine)스크립트란 트레이딩뷰 플랫폼상에서 실행가능한 스크립트이며 코딩하기 위해 Pine에디터를 제공하고 있습니다.&lt;br&gt;
-종류로는 지표와 전략 스크립트가 있으며 지표는 차트의 보조지수로 활용하고 전략은 백테스팅이 가능합니다.&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;ファインスクリプトの戦略（strategy）を使って自動売買する方法について説明します。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     

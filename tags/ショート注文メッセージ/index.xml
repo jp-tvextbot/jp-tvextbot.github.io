@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ショート注文メッセージ on TVExtBot</title>
+    <link>https://jp-tvextbot.github.io/tags/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E6%B3%A8%E6%96%87%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8/</link>
+    <description>Recent content in ショート注文メッセージ on TVExtBot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 24 May 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://jp-tvextbot.github.io/tags/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E6%B3%A8%E6%96%87%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>ショート注文メッセージの使い方</title>
+      <link>https://jp-tvextbot.github.io/posts/shortmsg/</link>
+      <pubDate>Tue, 24 May 2022 08:06:25 +0600</pubDate>
+      
+      <guid>https://jp-tvextbot.github.io/posts/shortmsg/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;ショート注文メッセージとは、通常の注文メッセージの欠点を補うために短い形式に短縮された注文メッセージを指します。&lt;br&gt;&lt;br&gt;
+通常の注文メッセージは内容を変更すると、トレーディングビューのアラートを再設定する必要がありますが、ショート注文メッセージは注文IDと連動してクラウドサーバーに保存されるため、アラートを再設定する必要はありません。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

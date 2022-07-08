@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Telegram通知ボット on TVExtBot</title>
+    <link>https://jp-tvextbot.github.io/tags/telegram%E9%80%9A%E7%9F%A5%E3%83%9C%E3%83%83%E3%83%88/</link>
+    <description>Recent content in Telegram通知ボット on TVExtBot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 05 Mar 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://jp-tvextbot.github.io/tags/telegram%E9%80%9A%E7%9F%A5%E3%83%9C%E3%83%83%E3%83%88/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Telegram通知ボットサービス</title>
+      <link>https://jp-tvextbot.github.io/posts/telegram/</link>
+      <pubDate>Sat, 05 Mar 2022 08:06:25 +0600</pubDate>
+      
+      <guid>https://jp-tvextbot.github.io/posts/telegram/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;外出中でもTelegramでTVExtBotで自動売買される注文情報とエラー情報をリアルタイムで受け取ることができます。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>
