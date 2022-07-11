@@ -110,6 +110,19 @@
 &lt;/blockquote&gt;</description>
     </item>
     
+    <item>
+      <title>FTX取引所のサブアカウントの使用法</title>
+      <link>https://jp-tvextbot.github.io/posts/ftx_subaccount/</link>
+      <pubDate>Fri, 04 Mar 2022 08:06:25 +0600</pubDate>
+      
+      <guid>https://jp-tvextbot.github.io/posts/ftx_subaccount/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;FTXの上位アカウントは基本的にクロスマージンのみをサポートします。分離マージンを行うには、FTX取引所でサブアカウントを作成した後、サブアカウント名でAPIキーを追加する必要があります。&lt;br&gt;
+&lt;span class=&#34;text-danger&#34;&gt;&lt;i class=&#34;fas fa-hand-point-right&#34;&gt;&lt;/i&gt; FTX のサブアカウントで分離マージンポジションを使用すると、最大リスク制限を制限できます。&lt;/span&gt;&lt;br&gt;
+&lt;span class=&#34;text-danger&#34;&gt;&lt;i class=&#34;fas fa-hand-point-right&#34;&gt;&lt;/i&gt; サブアカウントに使用するAPIキーは必ず上位アカウントで作成してください。&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
     
   </channel>
 </rss>
