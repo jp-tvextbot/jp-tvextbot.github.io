@@ -312,6 +312,77 @@ if (!doNotTrack) {
         <li>上記の内容に同意する場合のみTVExtBotをご使用ください。</li>
     </ul>
 </div>
+<h3 id="tvextbot-設定の流れ">TVExtBot 設定の流れ</h3>
+<p>初めてご使用の方は必ず下記の手順で進めてください。</p>
+<div class="stepbar">
+    <div class="stepbarwrap">
+        <div class="steptitle">
+            <div class="stepcircle"><span>STEP<br>1</span></div>
+            <p class="title">Chrome拡張プログラムのインストール</p>
+        </div>
+        <div class="steptxt">
+            <span class="txt">Chrome Webストアで　<a href="https://chrome.google.com/webstore/detail/tvextbot-for-%E6%9A%97%E5%8F%B7%E9%80%9A%E8%B2%A8/bpkamndinncffcjnhbafficofhclnnde" target="_blank">TVExtBot拡張プログラム <i class="fas fa-external-link-square-alt"></i></a>をインストールして下さい。</span>
+        </div>
+        <span class="stepline"></span>
+    </div>
+    <div class="stepbarwrap">
+        <div class="steptitle">
+            <div class="stepcircle"><span>STEP<br>2</span></div>
+            <p class="title">認証キー発行&登録</p>
+        </div>
+        <div class="steptxt">
+            <span class="txt">
+                無料認証キーを発行して登録すれば、Binance現物、Liquid、Zaif、テストネットは1ヶ月間無料で使用可能です。 <a href="#認証キー発行登録"><i class="fas fa-angle-double-down"></i></a><br>
+                有料の認証キーの購入は <a href="/posts/authguide" target="_blank">認証キー登録＆購入ガイド <i class="fas fa-external-link-square-alt"></i></a> を参照してください。
+            </span>
+        </div>
+        <span class="stepline"></span>
+    </div>
+    <div class="stepbarwrap">
+        <div class="steptitle">
+            <div class="stepcircle"><span>STEP<br>3</span></div>
+            <p class="title">取引所のAPIキー登録</p>
+        </div>
+        <div class="steptxt">
+            <span class="txt">取引所APIの発行は<a href="/posts/api" target="_blank">取引所APIの発行方法 <i class="fas fa-external-link-square-alt"></i></a>を参照してください。</span><br>
+            <span class="small text-danger"><i class="fas fa-hand-point-right"></i> APIキー発行時に固定IP登録が必要な場合、本人のAPIキー登録画面にあるIPアドレスを必ず登録してください。</span>
+        </div>
+        <span class="stepline"></span>
+    </div>
+    <div class="stepbarwrap">
+        <div class="steptitle">
+            <div class="stepcircle"><span>STEP<br>4</span></div>
+            <p class="title">Telegram通知ボット設定</p>
+        </div>
+        <div class="steptxt">
+            <span class="txt">
+                外出中でもTelegramで自動売買される注文情報とエラー情報をリアルタイムで受け取ることができます。<br>
+                詳細は<a href="/posts/telegram" target="_blank">Telegram通知ボットサービス<i class="fas fa-external-link-square-alt"></i></a> を参照してください。
+            </span>
+        </div>
+        <span class="stepline"></span>
+    </div>
+    <div class="stepbarwrap">
+        <div class="steptitle">
+            <div class="stepcircle"><span>STEP<br>5</span></div>
+            <p class="title">注文メッセージの作成</p>
+        </div>
+        <div class="steptxt">
+            <span class="txt">詳細については、以下の <i class="fas fa-angle-double-down"></i> <a href="#注文メッセージの作成">注文メッセージの作成</a >を参考してください。</span>
+        </div>
+        <span class="stepline"></span>
+    </div>
+    <div class="stepbarwrap">
+        <div class="steptitle">
+            <div class="stepcircle"><span>STEP<br>6</span></div>
+            <p class="title">トレーディングビューのアラート設定</p>
+        </div>
+        <div class="steptxt">
+            <span class="txt">詳細は以下の <i class="fas fa-angle-double-down"></i> <a href="#トレーディングビューのアラート設定">トレーディングビューのアラート設定</a>を参照してください。</span>
+        </div>
+        <span class="stepline"></span>
+    </div>
+</div>
 <h3 id="chrome拡張プログラムのインストール">Chrome拡張プログラムのインストール</h3>
 <p>1.Chrome Webストアで、[Chromeに追加]ボタンをクリックして自分のChromeブラウザにインストールしてください。
 <a class="btn btn-info" role="button" aria-pressed="true" href="https://chrome.google.com/webstore/detail/tvextbot-for-%E6%9A%97%E5%8F%B7%E9%80%9A%E8%B2%A8/bpkamndinncffcjnhbafficofhclnnde" target="_blank"><i class="fab fa-chrome"></i> TVExtBot拡張アプリダウンロード</a>
@@ -330,6 +401,7 @@ if (!doNotTrack) {
 <figure><img src="images/main_options.png"/>
 </figure>
 </p>
+<h3 id="認証キー発行登録">認証キー発行&amp;登録</h3>
 <p>5.認証キー登録画面で認証キーを購入して登録してください。<br></p>
 <blockquote>
 <p>※有料の認証キー購入については<i class="fab fa-bitcoin"></i> <a href="/posts/authguide">認証キー登録＆購入ガイド</a> を参照してください。<br>
@@ -338,7 +410,7 @@ if (!doNotTrack) {
 <figure><img src="images/register_authkey.png"/>
 </figure>
 
-<h3 id="apiキー登録">APIキー登録</h3>
+<h3 id="取引所のapiキー登録">取引所のAPIキー登録</h3>
 <div id="alert" class="alert alert-info">
 <h5 class="alert-heading"><i class="fa fa-rocket"></i> 現在TVExtBot内で利用可能な取引所</h5>
     <ul class="">
@@ -363,12 +435,12 @@ if (!doNotTrack) {
 　<span class="text-danger small"><i class="fas fa-hand-point-right"></i> APIキー発行時に固定IP登録が必要な場合、本人のAPIキー登録画面にあるIPアドレスを必ず登録してください。 （有料バージョンのみ）</span><br>
 　<span class="text-danger small"><i class="fas fa-hand-point-right"></i> ウェブフックURLとIPアドレスはユーザーごとに異なります。 ぜひご自身の拡張プログラム設定画面にあるウェブフックURLとIPアドレスをご使用ください。</span><br></p>
 </blockquote>
-<p>8.APIキー登録画面で[編集]ボタンをクリックし、取引所のAPIキーと秘密キーを入力して[保存]ボタンをクリックしてください。</p>
-<figure><img src="images/api_key.png"/>
+<p>6.APIキー登録画面で[編集]ボタンをクリックし、取引所のAPIキーと秘密キーを入力して[保存]ボタンをクリックしてください。</p>
+<p><figure><img src="images/api_key.png"/>
 </figure>
 
-<p><span class="text-danger">※ 取引所のロックを解除するために認証キーを購入してください。 [ <i class="fab fa-bitcoin"></i> <a href="/posts/authguide">認証キー登録＆購入ガイド</a> ]</span></p>
-<p>9.取引所の接続に成功すると、下記の接続成功メッセージとともに[接続中]ボタンに変わることを確認できます。
+<br>
+7.取引所の接続に成功すると、下記の接続成功メッセージとともに[接続中]ボタンに変わることを確認できます。
 <figure><img src="images/success_apikey.png"/>
 </figure>
 </p>
@@ -379,6 +451,14 @@ if (!doNotTrack) {
 <blockquote>
 <p><i class="fas fa-hand-point-right"></i> APIキーは各取引所あたり最大5個まで登録が可能です。</p>
 </blockquote>
+<h3 id="telegram通知ボット設定">Telegram通知ボット設定</h3>
+<p>8.注文結果とエラー情報をリアルタイムで通知メッセージを受け取ることができるテレグラム通知ボットを設定します。</p>
+<blockquote>
+<p>※詳細は<i class="fab fa-telegram"></i> <a href="/posts/telegram">Telegram通知ボットサービス</a> を参照してください。</p>
+</blockquote>
+<figure><img src="images/telegram.png"/>
+</figure>
+
 <h3 id="注文メッセージの作成">注文メッセージの作成</h3>
 <blockquote>
 <p><span class="text-default">注文メッセージには <span class="text-danger">通常の注文メッセージ</span>と新しく追加された <span class="text-danger">ショート注文メッセージ</span> の2種類があります。<br>
@@ -398,7 +478,7 @@ if (!doNotTrack) {
 </div>
 <p><span class="text-primary"><i class="fas fa-hand-point-right"></i> 無料公開インジケーター であるSuperTrendを利用して、ロングシグナル発生時、ポジション決済→買い注文を、ショートシグナル発生時、ポジション決済→売り注文を例に説明します。</span><br>
 <span class="text-primary"><i class="fas fa-hand-point-right"></i> 以下の説明は通常の注文メッセージを使用した例ですが、ショート注文メッセージに変更して使用しても構いません。</span></p>
-<p>12.メッセージ作成画面で、トレーディングビューのアラートに設定する注文メッセージを買い、売り、ポジション決済順に作成します。<br></p>
+<p>9.メッセージ作成画面で、トレーディングビューのアラートに設定する注文メッセージを買い、売り、ポジション決済順に作成します。<br></p>
 <p><span class="text-danger"><i class="fas fa-exclamation-triangle"></i> 注文メッセージは必ずメッセージ作成画面で作成してください！</span><span class="text-danger"></span></p>
 <div id="alert" class="alert alert-info">
 <h6 class="alert-heading">例）以下の内容を入力します（買い注文メッセージ）</h6>
@@ -457,7 +537,7 @@ if (!doNotTrack) {
 </p>
 <p><i class="fas fa-hand-point-right"></i> ポジション決済注文メッセージ出力結果
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TVM</span><span style="color:#f92672">:</span>{<span style="color:#e6db74">&#34;exchange&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;bybit&#34;</span>,<span style="color:#e6db74">&#34;account&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;*&#34;</span>,<span style="color:#e6db74">&#34;symbol&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;BTC/USD&#34;</span>,<span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;market&#34;</span>,<span style="color:#e6db74">&#34;side&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;close&#34;</span>,<span style="color:#e6db74">&#34;token&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;トークン&#34;</span>}<span style="color:#f92672">:</span><span style="color:#a6e22e">MVT</span></span></span></code></pre></div></p>
-<h3 id="トレーディングビューのアラート追加">トレーディングビューのアラート追加</h3>
+<h3 id="トレーディングビューのアラート設定">トレーディングビューのアラート設定</h3>
 <blockquote>
 <p><span class="text-primary"><i class="fas fa-info-circle"></i> ウェブフックURLはユーザーごとに異なります。 必ず本人の設定画面にあるウェブフックURLをご使用ください。</span><br>
 <span class="text-danger small">※ 本人の注文メッセージ作成画面にあるウェブフックURLと異なる場合は注文エラーが発生するので、ご注意ください。</span><br>
@@ -619,10 +699,13 @@ if (!doNotTrack) {
   <ul>
     <li>
       <ul>
+        <li><a href="#tvextbot-設定の流れ">TVExtBot 設定の流れ</a></li>
         <li><a href="#chrome拡張プログラムのインストール">Chrome拡張プログラムのインストール</a></li>
-        <li><a href="#apiキー登録">APIキー登録</a></li>
+        <li><a href="#認証キー発行登録">認証キー発行&amp;登録</a></li>
+        <li><a href="#取引所のapiキー登録">取引所のAPIキー登録</a></li>
+        <li><a href="#telegram通知ボット設定">Telegram通知ボット設定</a></li>
         <li><a href="#注文メッセージの作成">注文メッセージの作成</a></li>
-        <li><a href="#トレーディングビューのアラート追加">トレーディングビューのアラート追加</a></li>
+        <li><a href="#トレーディングビューのアラート設定">トレーディングビューのアラート設定</a></li>
       </ul>
     </li>
   </ul>
