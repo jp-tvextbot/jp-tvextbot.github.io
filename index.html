@@ -534,7 +534,7 @@ if (!doNotTrack) {
               <h5 class="card-title text-success text-uppercase text-center">PRO</h5>
               <div class="row d-flex align-items-end">
                 <div class="col-md-12 text-center">
-                  <span id="standardPrice" class="text-center" style="font-size: 2rem;margin: 0;">14,000円</span>/
+                  <span id="standardPrice" class="text-center" style="font-size: 2rem;margin: 0;">16,000円</span>/
                   <select name="selStandardPeriod" class="border-default text-default">
                     <option value="6month">6ヶ月</option>
                     <option value="1year">1年</option>
@@ -760,9 +760,9 @@ if (!doNotTrack) {
     $(document).on("change", "select[name=selStandardPeriod]",function(e) {
         var period = $(this).val();
         if (period === '1year') {
-            $('#standardPrice').text('20,000円');
+            $('#standardPrice').text('24,000円');
         } else if (period === '6month') {
-            $('#standardPrice').text('14,000円');
+            $('#standardPrice').text('16,000円');
         }    
     });  
 
