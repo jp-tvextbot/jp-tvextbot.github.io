@@ -1,0 +1,46 @@
+---
+title: "FTX取引所のサブアカウントの使用法"
+hero: images/hero.png
+date: 2022-03-04T08:06:25+06:00
+description: FTX取引所のサブアカウントの使用法
+menu:
+  sidebar:
+    name: FTX取引所のサブアカウントの使用法
+    identifier: ftx
+    weight: 5
+tags: ["FTX", "サブアカウント"]
+categories: ["Manual"]
+---
+
+> FTXの上位アカウントは基本的にクロスマージンのみをサポートします。分離マージンを行うには、FTX取引所でサブアカウントを作成した後、サブアカウント名でAPIキーを追加する必要があります。<br>
+><span class="text-danger"><i class="fas fa-hand-point-right"></i> FTX のサブアカウントで分離マージンポジションを使用すると、最大リスク制限を制限できます。</span><br>
+><span class="text-danger"><i class="fas fa-hand-point-right"></i> サブアカウントに使用するAPIキーは必ず上位アカウントで作成してください。</span>
+<!--more-->
+
+### FTX取引所サブアカウント設定後にサブアカウントに資金を転送する
+
+1.まず、FTX取引所のアカウント設定で、下の[サブアカウント設定]をクリックしてサブアカウントを追加します。
+{{< figure src="images/ftx01.png" >}}
+
+2.以下のようにサブアカウントを追加したら、メインアカウントの資金をサブアカウントに転送します。
+{{< figure src="images/ftx02.png" >}}
+
+### サブアカウントのAPIキー作成
+
+3.<span class="text-danger font-weight-bold">メインアカウント</span>を選択してAPIキータブでAPIキーを作成します。
+{{< figure src="images/ftx03.png" >}}
+<span class="text-danger"><i class="fas fa-hand-point-right"></i> サブアカウントを選択して作成したAPIキーは使用できないので、ご注意ください。</span>
+
+### サブアカウント用のAPIキーを追加する
+3.TVExtBot設定のAPI登録画面で1で追加したサブアカウント名でAPIキーを追加します。
+{{< figure src="images/ftx04.png" >}}
+
+4.サブアカウント名のAPIキーを追加したら、サブアカウントの残高を照会して、2から送信された資金と同じであることを確認します。
+{{< figure src="images/ftx05.png" >}}
+
+### サブアカウントを指定して注文メッセージを作成する
+
+5.サブアカウントを選択して注文メッセージを作成します。
+{{< figure src="images/ftx06.png" >}}
+
+ご質問がある場合は、開発者にお問い合わせください。
