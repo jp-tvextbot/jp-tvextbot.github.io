@@ -64,7 +64,7 @@
         
         
           
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -376,31 +376,31 @@ if (!doNotTrack) {
 <h3 id="chrome拡張プログラムのインストール">Chrome拡張プログラムのインストール</h3>
 <p>1.Chrome Webストアで、[Chromeに追加]ボタンをクリックして自分のChromeブラウザにインストールしてください。
 <a class="btn btn-info" role="button" aria-pressed="true" href="https://chrome.google.com/webstore/detail/tvextbot-for-%E6%9A%97%E5%8F%B7%E9%80%9A%E8%B2%A8/bpkamndinncffcjnhbafficofhclnnde" target="_blank"><i class="fab fa-chrome"></i> TVExtBot拡張アプリダウンロード</a>
-<figure><img src="images/install.png"/>
+<figure><img src="/posts/first/images/install.png">
 </figure>
 </p>
 <p>2.インストール後、以下のように右上の拡張プログラムアイコンをクリックし、TVExtBotの固定ピンをクリックします。
-<figure><img src="images/installed.png"/>
+<figure><img src="/posts/first/images/installed.png">
 </figure>
 </p>
 <p>3.TVExtBotアイコンをクリックしてポップアップ画面の設定を選択すると、設定画面に移動します。
-<figure><img src="images/link_option.png"/>
+<figure><img src="/posts/first/images/link_option.png">
 </figure>
 </p>
 <p>4.設定画面に移動すると、以下のように設定画面内のメッセージ作成画面を確認できます。
-<figure><img src="images/main_options.png"/>
+<figure><img src="/posts/first/images/main_options.png">
 </figure>
 </p>
 <h3 id="認証キー発行登録">認証キー発行&amp;登録</h3>
 <p>5.認証キー登録画面で認証キーを購入して登録してください。<br></p>
 <blockquote>
-<p>※有料の認証キー購入については<i class="fab fa-bitcoin"></i> <a href="/posts/authguide">認証キー登録＆購入ガイド</a> を参照してください。<br></p>
+<p>※有料の認証キー購入については<i class="fab fa-bitcoin"></i> <a href="/posts/authguide/">認証キー登録＆購入ガイド</a> を参照してください。<br></p>
 </blockquote>
 <!-- ><span class="text-primary"><i class="fas fa-hand-point-right"></i> 銀行口座振込をご希望の場合は、 <a class="text-muted" href="mailto:tvextbot@gmail.com"><i class="fa fa-envelope"></i> メール</a> または <a class="text-muted" href="https://t.me/bkson55"><i class="fab fa-telegram"></i> Telegram</a>にお問い合わせください。</span><br> -->
 <blockquote>
 <p><i class="fas fa-info-circle"></i> 無料認証キーを発行して登録すれば、bitFlyer、Zaif、テストネットに限って1ヶ月間無料で使用可能です。</p>
 </blockquote>
-<figure><img src="images/register_authkey.png"/>
+<figure><img src="/posts/first/images/register_authkey.png">
 </figure>
 
 <h3 id="取引所のapiキー登録">取引所のAPIキー登録</h3>
@@ -422,17 +422,17 @@ if (!doNotTrack) {
     </ul>
 </div>
 <blockquote>
-<p><span class="text-primary"><i class="fas fa-info-circle"></i> 各取引所のAPIを発行するための詳細については、右のリンクをご覧ください。 [ <i class="fas fa-cogs"></i> <a href="/posts/api">取引所APIの発行方法</a> ]</span> <br>
+<p><span class="text-primary"><i class="fas fa-info-circle"></i> 各取引所のAPIを発行するための詳細については、右のリンクをご覧ください。 [ <i class="fas fa-cogs"></i> <a href="/posts/api/">取引所APIの発行方法</a> ]</span> <br>
 　<span class="text-danger small"><i class="fas fa-hand-point-right"></i> APIキー発行時に固定IP登録が必要な場合、本人のAPIキー登録画面にあるIPアドレスを必ず登録してください。 （有料バージョンのみ）</span><br>
 　<span class="text-danger small"><i class="fas fa-hand-point-right"></i> ウェブフックURLとIPアドレスはユーザーごとに異なります。 ぜひご自身の拡張プログラム設定画面にあるウェブフックURLとIPアドレスをご使用ください。</span><br></p>
 </blockquote>
 <p>6.APIキー登録画面で[編集]ボタンをクリックし、取引所のAPIキーと秘密キーを入力して[保存]ボタンをクリックしてください。</p>
-<p><figure><img src="images/api_key.png"/>
+<p><figure><img src="/posts/first/images/api_key.png">
 </figure>
 
 <br>
 7.取引所の接続に成功すると、下記の接続成功メッセージとともに[接続中]ボタンに変わることを確認できます。
-<figure><img src="images/success_apikey.png"/>
+<figure><img src="/posts/first/images/success_apikey.png">
 </figure>
 </p>
 <blockquote>
@@ -445,17 +445,14 @@ if (!doNotTrack) {
 <h3 id="telegram通知ボット設定">Telegram通知ボット設定</h3>
 <p>8.注文結果とエラー情報をリアルタイムで通知メッセージを受け取ることができるテレグラム通知ボットを設定します。</p>
 <blockquote>
-<p>※詳細は<i class="fab fa-telegram"></i> <a href="/posts/telegram">Telegram通知ボットサービス</a> を参照してください。</p>
+<p>※設定画面の基本設定にある<b>［連携］</b>ボタンを押し、開いたTelegramで<b>［開始］</b>を押すと連携されます。詳細は<i class="fab fa-telegram"></i> <a href="/posts/telegram/">Telegram通知ボットサービス</a> を参照してください。</p>
 </blockquote>
-<figure><img src="images/telegram.png"/>
-</figure>
-
 <h3 id="注文メッセージの作成">注文メッセージの作成</h3>
 <blockquote>
 <p><span class="text-default">注文メッセージには <span class="text-danger">通常の注文メッセージ</span>と新しく追加された <span class="text-danger">ショート注文メッセージ</span> の2種類があります。<br>
 通常の注文メッセージは内容を変更すると、トレーディングビューのアラートを再設定する必要がありますが、ショート注文メッセージは注文IDと連動してクラウドサーバーに保存されるため、アラートを再設定する必要はありません。<br>
 <small><span class="text-primary"><i class="fas fa-info-circle"></i> <b>ショート注文メッセージ</b>とは、通常の注文メッセージの欠点を補うために短い形式に短縮された注文メッセージを指します。</span></small><br><br>
-<i class="fas fa-link"></i>ショート注文メッセージの使用方法は、<i class="fas fa-hand-point-right"></i> <a href="/posts/shortmsg">ショート注文メッセージの使い方</a>リンクを参照してください。</span></p>
+<i class="fas fa-link"></i>ショート注文メッセージの使用方法は、<i class="fas fa-hand-point-right"></i> <a href="/posts/shortmsg/">ショート注文メッセージの使い方</a>リンクを参照してください。</span></p>
 </blockquote>
 <div id="alert" class="alert alert-danger">
      <h5 class="alert-heading"><i class="fas fa-exclamation-triangle"></i>注意事項</h5>
@@ -486,7 +483,7 @@ if (!doNotTrack) {
 </ul>
 </div>
 <p><i class="fas fa-hand-point-right"></i> 買い注文入力画面
-<figure><img src="images/buy_message.png"/>
+<figure><img src="/posts/first/images/buy_message.png">
 </figure>
 </p>
 <p><i class="fas fa-hand-point-right"></i> 買い注文メッセージ出力結果
@@ -506,7 +503,7 @@ if (!doNotTrack) {
 </ul>
 </div>
 <p><i class="fas fa-hand-point-right"></i> 売り注文入力画面
-<figure><img src="images/sell_order_message.png"/>
+<figure><img src="/posts/first/images/sell_order_message.png">
 </figure>
 </p>
 <p><i class="fas fa-hand-point-right"></i> 売り注文メッセージ出力結果
@@ -523,7 +520,7 @@ if (!doNotTrack) {
 </ul>
 </div>
 <p><i class="fas fa-hand-point-right"></i> ポジション決済入力画面
-<figure><img src="images/close_message.png"/>
+<figure><img src="/posts/first/images/close_message.png">
 </figure>
 </p>
 <p><i class="fas fa-hand-point-right"></i> ポジション決済注文メッセージ出力結果
@@ -538,11 +535,11 @@ if (!doNotTrack) {
 </blockquote>
 <p>10.BybitのBTCUSDチャートを選択してSuperTrendインジケーターを呼び出します。<br>
 <span class="text-danger small"><i class="fas fa-hand-point-right"></i> SuperTrendはテスト用の指標です。 実取引には使用しないでください。</span>
-<figure><img src="images/bybit_chart.png"/>
+<figure><img src="/posts/first/images/bybit_chart.png">
 </figure>
 </p>
 <p>11.1時間足基準で下記のlongシグナル発生時ポジション決済→買い注文を、shortシグナル発生時ポジション決済→売り注文を設定します。
-<figure><img src="images/supertrend.png"/>
+<figure><img src="/posts/first/images/supertrend.png">
 </figure>
 </p>
 <p>12.アラート作成ボタンをクリックし条件にSuperTrendとBuyを選択、[バーの終値毎に１回]を選択した後、メッセージ欄にポジション決済と買い注文メッセージを一緒にコピー＆貼り付けをします。<br></p>
@@ -550,7 +547,7 @@ if (!doNotTrack) {
 <p><span class="text-danger">※ ウェブフックURLは、本人の注文メッセージ作成画面にあるウェブフックURLをコピーして貼り付けてください。</span></p>
 </blockquote>
 <p><i class="fas fa-hand-point-right"></i> 買い注文のアラート追加
-<figure><img src="images/buy_alertmsg.png" width="600"/>
+<figure><img src="/posts/first/images/buy_alertmsg.png" width="600">
 </figure>
 </p>
 <p><i class="fas fa-hand-point-right"></i> 買い注文のアラートメッセージ設定内容 <span class="text-danger">(複数の注文メッセージを設定可能)</span>
@@ -562,14 +559,14 @@ if (!doNotTrack) {
 <p><span class="text-danger">※ ウェブフックURLは、本人の注文メッセージ作成画面にあるウェブフックURLをコピーして貼り付けてください。</span></p>
 </blockquote>
 <p><i class="fas fa-hand-point-right"></i> 売り注文のアラート追加
-<figure><img src="images/sell_alertmsg.png" width="600"/>
+<figure><img src="/posts/first/images/sell_alertmsg.png" width="600">
 </figure>
 </p>
 <p><i class="fas fa-hand-point-right"></i> 売り注文のアラートメッセージ設定内容 <span class="text-danger">(複数の注文メッセージを設定可能)</span>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TVM</span><span style="color:#f92672">:</span>{<span style="color:#e6db74">&#34;exchange&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;bybit&#34;</span>,<span style="color:#e6db74">&#34;account&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;*&#34;</span>,<span style="color:#e6db74">&#34;symbol&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;BTC/USD&#34;</span>,<span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;market&#34;</span>,<span style="color:#e6db74">&#34;side&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;close&#34;</span>,<span style="color:#e6db74">&#34;token&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;トークン&#34;</span>}<span style="color:#f92672">:</span><span style="color:#a6e22e">MVT</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">TVM</span><span style="color:#f92672">:</span>{<span style="color:#e6db74">&#34;exchange&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;bybit&#34;</span>,<span style="color:#e6db74">&#34;account&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;*&#34;</span>,<span style="color:#e6db74">&#34;symbol&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;BTC/USD&#34;</span>,<span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;limit&#34;</span>,<span style="color:#e6db74">&#34;side&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;sell&#34;</span>,<span style="color:#e6db74">&#34;bal_pct&#34;</span><span style="color:#f92672">:</span><span style="color:#ae81ff">30</span>,<span style="color:#e6db74">&#34;price&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;last&#34;</span>,<span style="color:#e6db74">&#34;leverage&#34;</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>,<span style="color:#e6db74">&#34;margin_type&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;isolated&#34;</span>,<span style="color:#e6db74">&#34;token&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;トークン&#34;</span>}<span style="color:#f92672">:</span><span style="color:#a6e22e">MVT</span></span></span></code></pre></div></p>
 <p>14.以下のようにアラートが追加されたことを確認できます。
-<figure><img src="images/completed_alert.png"/>
+<figure><img src="/posts/first/images/completed_alert.png">
 </figure>
 </p>
 <p>15.設定はここまでです。 以下は、TVExtBotが設定した注文メッセージを通じて自動売買を実行します。<br></p>
@@ -779,7 +776,7 @@ if (!doNotTrack) {
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io#about">紹介</a>
+                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io/#about">紹介</a>
                 </li>
               
               
@@ -788,7 +785,7 @@ if (!doNotTrack) {
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io#features">特徴</a>
+                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io/#features">特徴</a>
                 </li>
               
               
@@ -797,7 +794,7 @@ if (!doNotTrack) {
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io#price">価格</a>
+                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io/#price">価格</a>
                 </li>
               
               

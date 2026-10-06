@@ -64,7 +64,7 @@
         
         
           
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -296,13 +296,13 @@ if (!doNotTrack) {
 <span class="text-primary h5"><i class="fas fa-hand-point-right"></i> <a href="https://jp.tradingview.com/script/szTDNVRU/" target="_blank">平均足アップスイング戦略</a></span></p>
 <h3 id="バックテスト">バックテスト</h3>
 <p>以下のバックテスト結果はBinance現物取引所のBTC/USDTチャートの30分１時間足を基準にしています。<span class="text-primary small"><br>(テスト期間：2020年1月1日から2022年7月8日まで)</span>
-<figure><img src="images/haus_backtest.png"/>
+<figure><img src="/posts/strategies/indicator_haus/images/haus_backtest.png">
 </figure>
 
 <span class="text-danger">※ バックテストは誰でも利用可能です。 下のリンクをクリックしてお気に入りに追加し、直接テストして純利益および勝率を確認してください。</span><br>
 <span class="text-primary h5"><i class="fas fa-hand-point-right"></i> <a href="https://jp.tradingview.com/script/szTDNVRU/" target="_blank">平均足アップスイング戦略を見る</a></span><br></p>
 <h4 id="入力項目説明">入力項目説明</h4>
-<p><figure><img src="images/haus_input.png" width="600"/>
+<p><figure><img src="/posts/strategies/indicator_haus/images/haus_input.png" width="600">
 </figure>
 <br></p>
 <div id="alert" class="alert alert-info">
@@ -322,7 +322,7 @@ if (!doNotTrack) {
 <p><span class="text-primary">Binance BTC/USDTを例に説明します。</span><br></p>
 <h4 id="買い注文メッセージ">買い注文メッセージ</h4>
 <p>1.注文メッセージ作成画面で、下記のように買い注文に必要な内容を入力し、メッセージ登録ボタンをクリックします。
-<figure><img src="images/binance_btc_buy_message.png"/>
+<figure><img src="/posts/strategies/indicator_haus/images/binance_btc_buy_message.png">
 </figure>
 
 <span class="text-danger">※注文IDはメッセージを登録すると自動生成されます。 ①と②はチャート設定で使用します。</span>
@@ -341,7 +341,7 @@ if (!doNotTrack) {
 </div>
 <h4 id="売り注文メッセージ">売り注文メッセージ</h4>
 <p>2.注文メッセージ作成画面で、下記のように売り注文に必要な内容を入力し、メッセージ登録ボタンをクリックします。
-<figure><img src="images/binance_btc_sell_message.png"/>
+<figure><img src="/posts/strategies/indicator_haus/images/binance_btc_sell_message.png">
 </figure>
 
 <span class="text-danger">※注文IDはメッセージを登録すると自動生成されます。 ③と④はチャート設定で使用します。</span>
@@ -365,19 +365,19 @@ if (!doNotTrack) {
         買いアラットの設定時に買いシグナルが発生して買い注文が実行される可能性があります。<br>
         そのため、必ず下記のように該当取引所のAPI接続を中止にしてからアラットを設定してください。<br><br>
         <span class="text-primary">【APIキー中止状態】</span>
-        <figure><img src="images/apikey_stop.png"/>
+        <figure><img src="/posts/strategies/indicator_haus/images/apikey_stop.png">
         </figure>
 <br>
         アラート追加を完了した後、必ずAPIを接続中にしてください。<br><br>
         <span class="text-primary">【APIキー接続中状態】</span>
-        <figure><img src="images/apikey_connected.png"/>
+        <figure><img src="/posts/strategies/indicator_haus/images/apikey_connected.png">
         </figure>
 
     </p>
 </div>
 <p>3.まずお使いの取引所と１時間足を選択し、平均足ップスイング指標を呼び出します。<br><span class="text-danger">(※ 例はBinance現物１時間足チャートです。)</span>
 <span class="text-danger">※インジケーター 検索ウィンドウに『[TVExtBot]Heikinashi Upswing Strategy』と入力</span>
-<figure><img src="images/binance_haus_chart.png"/>
+<figure><img src="/posts/strategies/indicator_haus/images/binance_haus_chart.png">
 </figure>
 
 <br>
@@ -392,7 +392,7 @@ if (!doNotTrack) {
 </ul>
 </div>
 <span class="text-primary">注文IDとメモ入力後画面</span>
-<figure><img src="images/binance_haus_input_result.png" width="600"/>
+<figure><img src="/posts/strategies/indicator_haus/images/binance_haus_input_result.png" width="600">
 </figure>
 <br>
 <div id="alert" class="alert alert-danger">
@@ -413,7 +413,7 @@ if (!doNotTrack) {
 <span class="text-danger">(※2) 以下の内容をコピーして、アラートにメッセージに貼り付けてください。</span>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>{{<span style="color:#a6e22e">strategy</span>.<span style="color:#a6e22e">order</span>.<span style="color:#a6e22e">alert_message</span>}}</span></span></code></pre></div>
 <br>
-<figure><img src="images/huas_alert.png" width="600"/>
+<figure><img src="/posts/strategies/indicator_haus/images/huas_alert.png" width="600">
 </figure>
 <br>
 <span class="text-info"><i class="fas fa-hand-point-right"></i> 質問がある場合 <a class="text-muted" href="mailto:tvextbot@gmail.com">メール(<i class="fa fa-envelope"></i>)</a>でお問い合わせください。</span>
@@ -615,7 +615,7 @@ if (!doNotTrack) {
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io#about">紹介</a>
+                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io/#about">紹介</a>
                 </li>
               
               
@@ -624,7 +624,7 @@ if (!doNotTrack) {
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io#features">特徴</a>
+                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io/#features">特徴</a>
                 </li>
               
               
@@ -633,7 +633,7 @@ if (!doNotTrack) {
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io#price">価格</a>
+                  <a class="smooth-scroll" href="https://jp-tvextbot.github.io/#price">価格</a>
                 </li>
               
               

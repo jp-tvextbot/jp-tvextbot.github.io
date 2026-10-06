@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tvextbot ビットフライヤー on TVExtBot</title>
+    <title>Tvextbot ビットフライヤー on TVExtBot</title>
     <link>https://jp-tvextbot.github.io/tags/tvextbot-%E3%83%93%E3%83%83%E3%83%88%E3%83%95%E3%83%A9%E3%82%A4%E3%83%A4%E3%83%BC/</link>
-    <description>Recent content in tvextbot ビットフライヤー on TVExtBot</description>
+    <description>Recent content in Tvextbot ビットフライヤー on TVExtBot</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>jp</language>
     <lastBuildDate>Tue, 24 May 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://jp-tvextbot.github.io/tags/tvextbot-%E3%83%93%E3%83%83%E3%83%88%E3%83%95%E3%83%A9%E3%82%A4%E3%83%A4%E3%83%BC/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>ショート注文メッセージの使い方</title>
       <link>https://jp-tvextbot.github.io/posts/shortmsg/</link>
